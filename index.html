@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/CSS" href="CSS3/Estilos.css">
+    <title>Actividad</title>
+</head>
+<body id="nn">
+    <header id="menu">
+     <img class="logo" src="img/Logo.png" alt="UniversidadUNAD"> 
+        <nav class="navegacion" >
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#">Conceptos</a>
+                    <ul class="submenu">
+                        <li><a href="#concepto1" id="">Parte 1</a></li>
+                        <li><a href="#concepto2" id="">Parte 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Recursos</a>
+                    <ul class="submenu">
+                        <li><a href="#recurso1" id="">Audio</a></li>
+                        <li><a href="#recurso2" id="">Video</a></li>
+                    </ul>
+                </li>
+                <li><a href="#Autoevaluacion">Autoevaluacion</a>
+                    <ul class="submenu">
+                        <li><a href="#" id="">item 1</a></li>
+                        <li><a href="#" id="">item 2</a></li>
+                    </ul></li>
+                <li><a href="#autor">Autor</a></li>
+            </ul>
+        </nav>       
+    </header>         
+    <aside class="widget">
+        <a class="twitter-timeline" data-width="300" data-height="500" data-theme="light" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a>
+    </aside>
+    <section id="inicio" class="fondo" >
+        <article class="inicio seccion">
+        
+            <h2>Informacion general</h2>
+            
+            CSS3 es un lenguaje de diseño gráfico que permite definir y crear la presentación de un documento estructurado,
+            escrito en un lenguaje de marcado. Es muy usado para establecer el diseño visual
+            de los documentos web e interfaces de usuario escritas en HTML.<br><br>
+        
+            <h2>Objetivos</h2>
+            
+            <ul>
+                <li>Diseñar un sitio web para el objeto virtual de apredizaje con el tema "Estilos internos y Externos,Selectores CSS".</li>
+            </ul>
+            <ul>
+                <li>Consolidar la información y recursos que sean referentes a la Estructura básica de CSS3, Estilos internos y Externos, selectores CSS.</li>
+            </ul>
+            <ul>
+                <li>Elaborar la maquetacion del sitio web con los contenidos y recursos del tema seleccionado.</li><br>
+            </ul>
+        
+            <h2>Tematica</h2>
+            
+            CSS son las iniciales de Cascading Style Sheets (hoja de estilos en cascada) 
+            que definen como mostrar un documento HTML. Básicamente consiste en atribuir una serie de cualidades estéticas
+            (color, fuente, tamaño, posición…) a los distintos elementos del documento.<br>
+        </article>
+    </section>
+    <section id="concepto1" class="fondo">
+        <article class="conceptos seccion">
+            <h2>Concepto Parte 1</h2>
+            <ul>
+            <li>Con una hoja de estilos externa, puedes cambiar el aspecto de un sitio web completo cambiando un sólo archivo.
+                Para ello cada página debe incluir una referencia al archivo de hoja de estilos externa dentro del elemento link que se encuentra dentro de la sección 
+                head
+                link rel="stylesheet" type="text/css" href="miestilo.css"
+                /head
+            Una hoja de estilo externa se puede escribir desde cualquier editor de texto, debe ser guardado con la extensión .css y no puede contener ninguna etiqueta HTML .</li>
+            </ul><br>
+            <ul>
+            <li>En una hoja de estilos interna
+                Una hoja de estilo interna se puede usar en una sólo página con un estilo único. Los estilos internos se definen dentro del elemento style dentro de la propia página 
+                
+                head
+                style
+                body 
+                    background-color: #FFFFFF
+                
+                
+                h1 
+                    color: #000000
+                    text-align: center
+                
+                /style
+                hea</li>
+            </ul><br>
+            <ul>
+            <li>Supongo que si estás utilizando los tres tipos de CSS te preguntarás cuál prevalece, 
+            ¿no? Pues como bien indica su nombre siguen un orden en cascada con esta prioridad Es
+            en línea (dentro de un elemento HTML )
+            Hojas de estilo externas e internas (en la sección de cabecera )
+            Las que viene por defecto en el navegador
+            Por lo tanto, un estilo en línea (dentro de un elemento HTML específico) tiene la prioridad más alta, lo que significa que va a anular los estilos definidos dentro de la etiqueta head,
+            aquellos recogidos en una hoja de estilos externa (archivo.css) o incluso los que trae por defecto el navegador.</li>
+            </ul><br>
+        |<ul>Comunicación Online, Estilos CSS3 día 14-02-2021, Bogotá – Colombia, referencia tomada en http://www.naiarafernandez.com/conceptos-basicos-css/#Tres_formas_de_insertar_CSS</ul>
+        
+    </article>                
+    </section>
+    <section id="concepto2" class="fondo">
+        <article class="conceptos seccion">
+            <h2>Concepto Parte 2</h2>
+            <ul> 
+                  <li>Los selectores CSS
+                    Los selectores CSS se utilizan para «encontrar» (o seleccionar) elementos HTML en función del nombre del elemento, del id , de la clase, del atributo, etc.
+                    El selector de elementos
+                    El selector de elementos elige elementos en función del nombre de los mismos. Por ejemplo, podríamos seleccionar todos los elementos h2 en una página, alinearlos a la izquierda y ponerlos en color rojo</li>   
+            </ul><br>
+            <ul>
+                 <li>El selector de ID
+                    El selector de ID utiliza el atributo id de un elemento HTML para seleccionar un elemento específico, esto quiere decir que será único dentro de una página.
+                    Para ello debes utilizar el símbolo de la almohadilla (#) delante del atributo id. Si por ejemplo tenemos un id=parrafo1 que queremos centrar y poner en color azul</li>
+            </ul><br>
+            <ul>
+                 <li>El selector de clase
+                    El selector de clase elige los elementos con un atributo de clase específico. Para ello tienes que escribir un punto (.) delante del nombre de la clase .
+                    Por ejemplo, podemos decidir que aquellos atributos con clase «newsletter» estén centrados y sean rojos</li>
+            </ul><br>
+            <ul>
+                <li>Conclusión
+                    Podría extenderme bastante más, pero como acercamiento creo que es más que suficiente. Una vez asimiles toda la información aquí plasmada, te animo a que eches un vistazo al style.css de tu WordPress (Apariencia → Editor) y así puedas ver de primera mano los diferentes tipos de selectores.</li>
+                     <br>
+            </ul>Comunicación Online, Estilos CSS3 día 14-02-2021, Bogotá – Colombia, referencia tomada en http://www.naiarafernandez.com/conceptos-basicos-css/#Tres_formas_de_insertar_CSS</ul>
+        </article>
+    </section>
+    <section id="recurso1" class="fondo">
+        <article class="recursos seccion">
+            <h2>Audio Explicacion</h2>
+            <audio controls>
+                <source src="media/audio.mp3" type="audio/mp3">                
+              Audio explicativo
+            </audio>            
+        </article>
+    </section>
+    <section id="recurso2" class="fondo">
+        <article class="recursos seccion">
+            <h2>Video explicacion</h2><br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/sXrawoSpQqw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
+        </article>
+    </section>
+    <section id="Autoevaluacion" class="fondo">
+        <article class="Autoevaluacion seccion">
+            <h2>Autoevalucion...</h2>
+        </article>
+    </section>
+    <section id="autor" class="fondo">
+        <article class="autor seccion">
+            <table>
+                <tr>
+                    <td>Ronny Laguado Jaimes</td>
+                    <th rowspan="5"><img class="inh" src="Img/f1.jpg" alt="UniversidadUNAD"></th>
+                </tr>
+                <tr>
+                    <td>Codigo No. 301122_1</td>
+                    
+                </tr>
+                <tr>
+                    <td>Ingenieria de Sistemas</td>
+                    
+                </tr>
+                <tr>
+                    <td>ronny.laguado22@outlook.com</td>
+                    
+                </tr>
+                <tr>
+                    <td>Skype: ronny.laguado22@outlook.com</td>                    
+                </tr>                
+              </table>
+        </article>
+        
+    </section>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+   
+</body>
+<footer>
+    2021
+</footer>
+</html>
